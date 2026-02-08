@@ -4,43 +4,74 @@
 <meta charset="UTF-8">
 <title>Tiếng Việt Brochure</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
     body {
-        margin:0;
+        margin: 0;
         font-family: Arial, sans-serif;
-        background:#f5f7fa;
-        text-align:center;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        flex-direction:column;
-        padding:20px;
+        background: #f5f7fa;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
     }
+
     img {
-        width:100%;
-        max-width:1000px;
-        height:auto;
-        box-shadow:0 4px 10px rgba(0,0,0,0.15);
-        margin-bottom:20px;
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        margin-bottom: 25px;
     }
+
+    .video-container {
+        width: 100%;
+        max-width: 800px;
+        aspect-ratio: 16 / 9;
+        margin-bottom: 25px;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 8px;
+    }
+
     .switch {
-        background:#044B38;
-        color:white;
-        padding:12px 24px;
-        border:none;
-        border-radius:6px;
-        cursor:pointer;
-        font-size:16px;
-        width:220px;
-        max-width:80%;
+        background: #044B38;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 220px;
+        max-width: 80%;
     }
+
     .switch:hover {
-        opacity:0.85;
+        opacity: 0.85;
     }
 </style>
 </head>
+
 <body>
+
 <img src="brochure-vi.jpg" alt="Vietnamese Brochure">
-<button class="switch" onclick="location.href='index.html'">Change Language</button>
+
+<div class="video-container">
+    <iframe
+        src="https://www.youtube.com/embed/jb3SLwF6D-A"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<button class="switch" onclick="location.href='index.html'">
+    Change Language
+</button>
+
 </body>
 </html>
